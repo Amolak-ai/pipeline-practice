@@ -1,11 +1,11 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "zhingat-rg"
+  name     = "zhingatrg"
   location = "West Europe"
 }
 
 
 resource "azurerm_storage_account" "stg" {
-  name                     = "pushpa-pipeline"
+  name                     = "pushpapipe"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "stg" {
 }
 
 resource "azurerm_storage_account" "stg2" {
-  name                     = "rajjoo-pipeline"
+  name                     = "rajjoopipe"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
