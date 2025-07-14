@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "stg" {
   account_replication_type = "GRS"
 }
 
-resource "azurerm_storage_account" "stg" {
+resource "azurerm_storage_account" "stg2" {
   name                     = "rajjoo-pipeline"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
